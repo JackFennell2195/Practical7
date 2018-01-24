@@ -4,6 +4,7 @@
 #include <SFML/OpenGL.hpp>
 #include <gl/GL.h>
 #include <gl/GLU.h>
+#include "Matrix3.h"
 
 using namespace std;
 using namespace sf;

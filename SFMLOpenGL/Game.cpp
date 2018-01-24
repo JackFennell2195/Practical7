@@ -114,7 +114,7 @@ void Game::update()
 		else
 			updatable = false;
 	}
-
+	Matrix3::Scale();
 	if (updatable)
 	{
 		rotationAngle += 0.05f;
