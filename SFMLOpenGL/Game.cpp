@@ -66,31 +66,31 @@ void Game::initialize()
 
 		//right face
 		glColor3f(1.0f, 0.0f, 0.0f);
-		glVertex3f(1.0f, 1.0f, 0.0f);
-		glVertex3f(-1.0f, 1.0f, 0.0f);
-		glVertex3f(-1.0f, -1.0f, 0.0f);
-		glVertex3f(1.0f, -1.0f, 0.0f);
+		glVertex3f(1.0f, 1.0f, -5.0f);
+		glVertex3f(1.0f, 1.0f, -15.0f);
+		glVertex3f(1.0f, -1.0f, -15.0f);
+		glVertex3f(1.0f, -1.0f, -5.0f);
 
 		//left face
 		glColor3f(1.0f, 0.0f, 1.0f);
-		glVertex3f(1.0f, 1.0f, 0.0f);
-		glVertex3f(-1.0f, 1.0f, 0.0f);
-		glVertex3f(-1.0f, -1.0f, 0.0f);
-		glVertex3f(1.0f, -1.0f, 0.0f);
-
+		glVertex3f(-1.0f, 1.0f, -5.0f);
+		glVertex3f(-1.0f, 1.0f, -15.0f);
+		glVertex3f(-1.0f, -1.0f, -15.0f);
+		glVertex3f(-1.0f, -1.0f, -5.0f);
+		
 		//top face
 		glColor3f(1.0f, 1.0f, 0.0f);
-		glVertex3f(-1.0f, 1.0f, 0.0f);
-		glVertex3f(-1.0f, 1.0f, 0.0f);
-		glVertex3f(-1.0f, 1.0f, 0.0f);
-		glVertex3f(-1.0f, 1.0f, 0.0f);
+		glVertex3f(1.0f, 1.0f, -15.0f);
+		glVertex3f(-1.0f, 1.0f, -15.0f);
+		glVertex3f(-1.0f, 1.0f, -5.0f);
+		glVertex3f(1.0f, 1.0f, -5.0f);
 
 		//bottom face
-		glColor3f(1.0f, 1.0f, 1.0f);
-		glVertex3f(1.0f, -1.0f, 0.0f);
-		glVertex3f(1.0f, -1.0f, 0.0f);
-		glVertex3f(1.0f, -1.0f, 0.0f);
-		glVertex3f(1.0f, -1.0f, 0.0f);
+		glColor3f(0.0f, 0.4f, 0.8f);
+		glVertex3f(1.0f, -1.0f, -15.0f);
+		glVertex3f(-1.0f, -1.0f, -15.0f);
+		glVertex3f(-1.0f, -1.0f, -5.0f);
+		glVertex3f(1.0f, -1.0f, -5.0f);
 
 		//Complete the faces of the Cube
 
@@ -117,7 +117,7 @@ void Game::update()
 
 	if (updatable)
 	{
-		rotationAngle += 0.005f;
+		rotationAngle += 0.05f;
 
 		if (rotationAngle > 360.0f)
 		{
