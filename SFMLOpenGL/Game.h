@@ -15,6 +15,7 @@ public:
 	Game();
 	~Game();
 	void run();
+	Vector point[8];
 private:
 	Window window;
 	bool isRunning = false;
@@ -22,6 +23,7 @@ private:
 	void update();
 	void draw();
 	void unload();
+	
 
 	GLuint index;
 	Clock clock;

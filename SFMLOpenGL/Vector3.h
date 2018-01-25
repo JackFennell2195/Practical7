@@ -4,7 +4,7 @@
 #include "string"
 #include <SFML/Graphics.hpp>
 
-class Vector3
+class Vector
 {
 public:
 	double getX();
@@ -16,22 +16,22 @@ public:
 	double getZ();
 	void setZ(double value);
 
-	Vector3();
-	Vector3(double x1, double y1, double z1);
-	Vector3(Vector3 * V);
+	Vector();
+	Vector(double x1, double y1, double z1);
+	Vector(Vector * V);
 	double length();
 	double lengthSquared();
 	void normalise();
 
-	Vector3 operator +(Vector3 V1);
-	Vector3 operator -(Vector3 V1);
-	Vector3 operator -();
-	double operator *(Vector3 V1);
-	Vector3 operator *(double k);
-	Vector3 operator *(float k);
-	Vector3 operator *(int k);
-	Vector3 operator ^(Vector3 V1);
-	std::string Vector3::toString();
+	Vector operator +(Vector V1);
+	Vector operator -(Vector V1);
+	Vector operator -();
+	double operator *(Vector V1);
+	Vector operator *(double k);
+	Vector operator *(float k);
+	Vector operator *(int k);
+	Vector operator ^(Vector V1);
+	std::string Vector::toString();
 	
 	
 
