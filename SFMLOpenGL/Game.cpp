@@ -117,7 +117,7 @@ void Game::update()
 	{
 		for (index = 0; index < 8; index++)
 		{
-			cout << "rotating" << endl;
+			cout << "rotating right" << endl;
 			point[index] = matrix.Rotation(1) * point[index];
 		}
 	}
@@ -126,6 +126,7 @@ void Game::update()
 	{
 		for (index = 0; index < 8; index++)
 		{
+			cout << "rotating left" << endl;
 			point[index] = matrix.Rotation(-1) * point[index];
 		}
 	}
@@ -134,7 +135,7 @@ void Game::update()
 	{
 		for (index = 0; index < 8; index++)
 		{
-			
+			cout << "getting bigger" << endl;
 			point[index] = matrix.Scale(101,101) * point[index];
 		}
 	}
@@ -142,6 +143,7 @@ void Game::update()
 	{
 		for (index = 0; index < 8; index++)
 		{
+			cout << "getting smaller" << endl;
 			point[index] = matrix.Scale(99,99) * point[index];
 		}
 	}
@@ -150,7 +152,7 @@ void Game::update()
 	{
 		for (index = 0; index < 8; index++)
 		{
-
+			cout << "translate" << endl;
 			point[index] = matrix.Translate(1, 1) * point[index];
 		}
 	}
@@ -158,6 +160,7 @@ void Game::update()
 	{
 		for (index = 0; index < 8; index++)
 		{
+			cout << "translate" << endl;
 			point[index] = matrix.Translate(-1, -1) * point[index];
 		}
 	}
