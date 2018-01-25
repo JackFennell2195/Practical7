@@ -1,4 +1,9 @@
 #include "Game.h"
+/// <summary>
+/// Cube doesnt redraw when rotated,scaled or
+/// translated but implimentation chages the 
+/// points on the cube
+/// </summary>
 
 bool updatable = false;
 
